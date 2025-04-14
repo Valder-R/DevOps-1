@@ -1,0 +1,15 @@
+{% extends 'basic.html' %}
+
+{% block title %}
+    Reviews
+{% endblock %}
+{% block body %}
+    <h1>Reviews</h1>
+    {% for review in reviews %}
+    <div class="review-block">
+        <h3 class="username">{{ review.username }}</h3>
+        <p class="date">{{ review.date.date() }}</p>
+        <p class="review-text">{{ review.review }}</p>
+    </div>
+    {% endfor %}
+{% endblock %}

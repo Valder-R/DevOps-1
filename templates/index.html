@@ -1,0 +1,19 @@
+{% extends 'basic.html' %}
+
+{% block title %}
+    HOME
+{% endblock %}
+{% block body %}
+    <h1>Add your review</h1>
+<form method="post" class="post-form">
+    <label class="form-label">
+        Username
+    <input type="text" name="username" placeholder="Username" required class="form-input">
+    </label>
+    <label class="form-label">
+        Review
+    <textarea name="review" placeholder="Review" required class="form-textarea"></textarea>
+    </label>
+    <button type="submit" class="submit-btn">Send</button>
+</form>
+{% endblock %}
